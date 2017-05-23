@@ -46,8 +46,8 @@ ExtendedMap
 see [Example](https://github.com/itavy/extended-map/blob/master/examples/example.js)
 
 ## TODO
-- [] add examples
-- [] promisify some methods
+- [ ] add examples
+- [ ] promisify some methods
 
 ## LICENSE
 
