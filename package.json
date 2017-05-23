@@ -9,11 +9,19 @@
     "coverage:check": "./node_modules/.bin/istanbul check-coverage",
     "test:check-style": "./node_modules/.bin/eslint index.js \"lib/**/*.js\" \"test/**/*.js\"",
     "docs": "./node_modules/.bin/jsdoc -c jsdoc.json",
+    "docs-md": "./node_modules/.bin/jsdoc2md --template README.hbs lib/v6x/*.js > README.md",
     "pretest": "npm run test:check-style"
+  },
+  "pre-commit": {
+    "run": [
+      "test:check-style",
+      "coverage",
+      "coverage:check"
+    ]
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/itavy/extended-map.git"
+    "url": "https://github.com/itavy/extended-map.git"
   },
   "keywords": [
     "extended",
@@ -37,5 +45,8 @@
     "jsdoc": "^3.4.3",
     "jsdoc-to-markdown": "^3.0.0",
     "pre-commit": "^1.2.2"
+  },
+  "dependencies": {
+    "semver": "^5.3.0"
   }
 }

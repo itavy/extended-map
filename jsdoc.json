@@ -4,7 +4,7 @@
  },
  "source": {
   "include": [
-   "./lib/"
+   "./lib/v6x"
   ],
   "exclude": [],
   "includePattern": ".+\\.js(doc)?$",
@@ -34,7 +34,7 @@
   "lenient": false,
   "destination": "./docs",
   "template": "./node_modules/jaguarjs-jsdoc",
-  "sourceRoot": "git/master/lib",
-  "repo": "git"
+  "sourceRoot": "https://github.com/itavy/extended-map/master/lib/v6x",
+  "repo": "https://github.com/itavy/extended-map"
  }
 }
