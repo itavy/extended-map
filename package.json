@@ -1,0 +1,41 @@
+{
+  "name": "@itavy/extended-map",
+  "version": "0.0.0",
+  "description": "Extended Map",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha",
+    "coverage:check": "./node_modules/.bin/istanbul check-coverage",
+    "test:check-style": "./node_modules/.bin/eslint index.js \"lib/**/*.js\" \"test/**/*.js\"",
+    "docs": "./node_modules/.bin/jsdoc -c jsdoc.json",
+    "pretest": "npm run test:check-style"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/itavy/extended-map.git"
+  },
+  "keywords": [
+    "extended",
+    "map"
+  ],
+  "author": "Octavian Ionescu <itavyg@gmail.com> (https://github.com/itavy)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/itavy/extended-map/issues"
+  },
+  "homepage": "https://github.com/itavy/extended-map#readme",
+  "devDependencies": {
+    "@itavy/test-utilities": "^1.1.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "eyes": "^0.1.8",
+    "jaguarjs-jsdoc": "^1.0.2",
+    "jsdoc": "^3.4.3",
+    "jsdoc-to-markdown": "^3.0.0",
+    "pre-commit": "^1.2.2"
+  }
+}
