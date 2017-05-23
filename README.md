@@ -46,6 +46,7 @@ ExtendedMap
 see [Example](https://github.com/itavy/extended-map/blob/master/examples/example.js)
 
 ## TODO
+- [ ] refactor jsdoc
 - [ ] add examples
 - [ ] promisify some methods
 
