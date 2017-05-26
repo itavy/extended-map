@@ -13,7 +13,8 @@ npm install @itavy/extended-map
 
 ## Quick Example
 ```
-const eMap = require('@itavy/extended-map').ExtendedMap({
+const ExtendedMap = require('@itavy/extended-map').ExtendedMap;
+const eMap = new ExtendedMap({
   defaultValue: 'myDefaultValue'
 });
 
@@ -32,7 +33,7 @@ return value: myDefaultValue
 see [Example](https://github.com/itavy/extended-map/blob/master/examples/example.js)
 
 ## TODO
-- [ ] refactor jsdoc
+- [x] refactor jsdoc
 - [ ] add examples
 - [ ] promisify some methods
 
