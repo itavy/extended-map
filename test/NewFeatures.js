@@ -1,11 +1,11 @@
 'use strict';
 
 const expect = require('@itavy/test-utilities').getExpect();
-const extendedMap = require('../lib/v6x/index').ExtendedMap;
+const ExtendedMap = require('../lib/v6x/index').ExtendedMap;
 
 describe('New features', () => {
   it('Should not overrite existing key', (done) => {
-    const testMap = extendedMap({ allowOverrite: false });
+    const testMap = Reflect.construct(ExtendedMap, [{ allowOverrite: false }]);
     testMap.set('testKey', 'testValue');
     // eslint-disable-next-line require-jsdoc
     const testSet = () => testMap.set('testKey', 'testValue2');
@@ -15,9 +15,7 @@ describe('New features', () => {
 
   it('Should return default value for nonexisting key', (done) => {
     const defaultValue = Symbol('defaultValue');
-    const testMap = extendedMap({
-      defaultValue,
-    });
+    const testMap = Reflect.construct(ExtendedMap, [{ defaultValue }]);
     testMap.set('testKey', 'testValue');
     const getValue = testMap.get('unknownKey');
     expect(getValue).to.be.equal(defaultValue);
