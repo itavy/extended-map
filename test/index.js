@@ -1,4 +1,4 @@
 'use strict';
 
-require('./Initialization');
-require('./NewFeatures');
+require('./ExtendedMap');
+require('./PromisedExtendedMap');
