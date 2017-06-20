@@ -1,7 +1,7 @@
 'use strict';
 
 const expect = require('@itavy/test-utilities').getExpect();
-const ExtendedMap = require('../lib/v6x/index').ExtendedMap;
+const ExtendedMap = require('../../lib/v6x/index').ExtendedMap;
 
 describe('New features', () => {
   it('Should not overrite existing key', (done) => {
