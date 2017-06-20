@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/itavy/extended-map#readme",
   "devDependencies": {
-    "@itavy/test-utilities": "^1.1.1",
+    "@itavy/test-utilities": "^2.0.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-import": "^2.2.0",
