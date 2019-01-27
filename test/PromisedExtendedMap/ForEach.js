@@ -1,13 +1,12 @@
 'use strict';
 
-const expect = require('@itavy/test-utilities').getExpect();
-const sinon = require('@itavy/test-utilities').getSinon();
-const PromisedMap = require('../../lib/v6x/index').PromisedMap;
+const { expect, getSinonSandbox } = require('@itavy/test-utilities');
+const { PromisedMap } = require('../../lib/latest');
 
 let sandbox;
 
 beforeEach((done) => {
-  sandbox = sinon.sandbox.create();
+  sandbox = getSinonSandbox();
   done();
 });
 

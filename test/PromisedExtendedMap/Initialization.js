@@ -1,7 +1,7 @@
 'use strict';
 
-const expect = require('@itavy/test-utilities').getExpect();
-const PromisedMap = require('../../lib/v6x/index').PromisedMap;
+const { expect } = require('@itavy/test-utilities');
+const { PromisedMap } = require('../../lib/latest');
 
 describe('Initialization', () => {
   it('Should return an instance of Map', (done) => {
